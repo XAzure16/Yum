@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       revolt.js:
-        specifier: 6.0.20
-        version: 6.0.20
+        specifier: 7.0.3
+        version: 7.0.3
     devDependencies:
       '@types/node':
         specifier: ^20.14.10
@@ -21,36 +21,37 @@ importers:
 
 packages:
 
-  '@fastify/busboy@2.1.1':
-    resolution: {integrity: sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==}
-    engines: {node: '>=14'}
-
-  '@insertish/exponential-backoff@3.1.0-patch.2':
-    resolution: {integrity: sha512-0lsMVexkZ7dHpQlPrTZDRsm42hZ4/CzKxP1hbAEJH8IaEwrIEhhTKJuFxPuLOi2TwPImuocncjYHpGpwVNOemQ==}
-
-  '@insertish/isomorphic-ws@4.0.1':
-    resolution: {integrity: sha512-kFD/p8T4Hkqr992QrdkbW/cQ/W/q2d9MPCobwzBv2PwTKLkCD9RaYDy6m17qRnSLQQ5PU0kHCG8kaOwAqzj1vQ==}
+  '@solid-primitives/map@0.4.11':
+    resolution: {integrity: sha512-OAD65RPxMDYv41oAvadPCqedZfDX92BbWLUC+Qwh9okVMDAF/5UM+t1916OAfGV01Cr30d/fxIT1x86P+gFgSQ==}
     peerDependencies:
-      ws: '*'
+      solid-js: ^1.6.12
 
-  '@insertish/oapi@0.1.18':
-    resolution: {integrity: sha512-LZLUk3WmzUjCM0quensexvQx/Kk1MpFBtCLJRnRrPOiaFT37JpOmWUFlrdu0sPS6B9wi2edEBeLcsnIiq85WMA==}
-    hasBin: true
+  '@solid-primitives/set@0.4.11':
+    resolution: {integrity: sha512-DBA4KjOvqc8aer0EO14MkJM6pgs+WHujkfRVwwE31i7NVzpiqp3RY9it2dvmLthj4MHzvOBoeZosgN8Pm44GiA==}
+    peerDependencies:
+      solid-js: ^1.6.12
+
+  '@solid-primitives/trigger@1.0.11':
+    resolution: {integrity: sha512-4oc8grBzBit7ByXgE1aZ0QXfhdlhXaiFjDKYsOhRyUJa8fN4hdr2IgsYqjmHwxyjK+Dm2OUwkCI1bGkaLgtgXg==}
+    peerDependencies:
+      solid-js: ^1.6.12
+
+  '@solid-primitives/utils@6.2.3':
+    resolution: {integrity: sha512-CqAwKb2T5Vi72+rhebSsqNZ9o67buYRdEJrIFzRXz3U59QqezuuxPsyzTSVCacwS5Pf109VRsgCJQoxKRoECZQ==}
+    peerDependencies:
+      solid-js: ^1.6.12
 
   '@types/node@20.14.10':
     resolution: {integrity: sha512-MdiXf+nDuMvY0gJKxyfZ7/6UFsETO7mGKF54MVD/ekJS6HdFtpZFBgrh6Pseu64XTb2MLyFPlbW6hj8HYRQNOQ==}
 
-  argparse@2.0.1:
-    resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
-
-  axios@0.21.4:
-    resolution: {integrity: sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==}
-
   axios@0.26.1:
     resolution: {integrity: sha512-fPwcX4EvnSHuInCMItEhAGnaSEXRBjtzh9fOtsE6E1G6p7vl7edEeZe11QHf18+6+9gR5PbKV/sGKNaD8YaMeA==}
 
-  eventemitter3@4.0.7:
-    resolution: {integrity: sha512-8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELRlrRwpmfeY2jjuUN4taQMsULKUVo1K4DvZl+0pgfyoysHxvmvEw==}
+  csstype@3.1.3:
+    resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==}
+
+  eventemitter3@5.0.1:
+    resolution: {integrity: sha512-GWkBvjiSZK87ELrYOSESUYeVIc9mvLLf/nXalMOS5dYrgZq9o5OVkbZAVM06CVxYsCwH9BDZFPlQTlPA1j4ahA==}
 
   follow-redirects@1.15.6:
     resolution: {integrity: sha512-wWN62YITEaOpSK584EZXJafH1AGpO8RVgElfkuXbTOrPX4fIfOyEpW/CsiNd8JdYrAoOvafRTOEnvsO++qCqFA==}
@@ -61,59 +62,35 @@ packages:
       debug:
         optional: true
 
-  globalyzer@0.1.0:
-    resolution: {integrity: sha512-40oNTM9UfG6aBmuKxk/giHn5nQ8RVz/SS4Ir6zgzOv9/qC3kKZ9v4etGTcJbEl/NyVQH7FGU7d+X1egr57Md2Q==}
-
-  globrex@0.1.2:
-    resolution: {integrity: sha512-uHJgbwAMwNFf5mLst7IWLNg14x1CkeqglJb/K3doi4dw6q2IvAAmM/Y81kevy83wP+Sst+nutFTYOGg3d1lsxg==}
-
-  js-yaml@4.1.0:
-    resolution: {integrity: sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==}
-    hasBin: true
+  isomorphic-ws@5.0.0:
+    resolution: {integrity: sha512-muId7Zzn9ywDsyXgTIafTry2sV3nySZeUDe6YedVd1Hvuuep5AsIlqK+XefWpYTyJG5e503F2xIuT2lcU6rCSw==}
+    peerDependencies:
+      ws: '*'
 
   lodash.defaultsdeep@4.6.1:
     resolution: {integrity: sha512-3j8wdDzYuWO3lM3Reg03MuQR957t287Rpcxp1njpEa8oDrikb+FwGdW3n+FELh/A6qib6yPit0j/pv9G/yeAqA==}
 
-  lodash.flatten@4.4.0:
-    resolution: {integrity: sha512-C5N2Z3DgnnKr0LOpv/hKCgKdb7ZZwafIrsesve6lmzvZIRZRGaZ/l6Q8+2W7NaT+ZwO3fFlSCzCzrDCFdJfZ4g==}
-
-  lodash.isequal@4.5.0:
-    resolution: {integrity: sha512-pDo3lu8Jhfjqls6GkMgpahsF9kCyayhgykjyLMNFTKWrpVdAQtYyB4muAMWozBB4ig/dtWAmsMxLEI8wuz+DYQ==}
-
   long@5.2.3:
     resolution: {integrity: sha512-lcHwpNoggQTObv5apGNCTdJrO69eHOZMi4BNC+rTLER8iHAqGrUVeLh/irVIM7zTw2bOXA8T6uNPeujwOLg/2Q==}
 
-  mime@3.0.0:
-    resolution: {integrity: sha512-jSCU7/VB1loIWBZe14aEYHU/+1UMEHoaO7qxCOVJOw9GgH72VAWppxNcjU+x9a2k3GSIBXNKxXQFqRvvZ7vr3A==}
-    engines: {node: '>=10.0.0'}
-    hasBin: true
+  revolt-api@0.7.11:
+    resolution: {integrity: sha512-8s6uiiBDDu4p7sfAaqMnhEPMWoawpAc07t06a7HeO1Du71Ai2ahYkMjerai0NGwGIey3NyBZTyNUD8XdXV1GXw==}
 
-  mobx@6.12.3:
-    resolution: {integrity: sha512-c8NKkO4R2lShkSXZ2Ongj1ycjugjzFFo/UswHBnS62y07DMcTc9Rvo03/3nRyszIvwPNljlkd4S828zIBv/piw==}
+  revolt.js@7.0.3:
+    resolution: {integrity: sha512-Wd6yINZBDbT2QUdR1VRfwNl0ty12aTdbCbWRTHBAeuOSWBcRQ0UBJfXf/oZh7omI1aD+qFnzffBjq1PvvLE2kg==}
 
-  openapi-typescript@5.4.2:
-    resolution: {integrity: sha512-tHeRv39Yh7brqJpbUntdjtUaXrTHmC4saoyTLU/0J2I8LEFQYDXRLgnmWTMiMOB2GXugJiqHa5n9sAyd6BRqiA==}
-    engines: {node: '>= 14.0.0'}
-    hasBin: true
+  seroval-plugins@1.0.7:
+    resolution: {integrity: sha512-GO7TkWvodGp6buMEX9p7tNyIkbwlyuAWbI6G9Ec5bhcm7mQdu3JOK1IXbEUwb3FVzSc363GraG/wLW23NSavIw==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      seroval: ^1.0
 
-  prettier@2.8.8:
-    resolution: {integrity: sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==}
-    engines: {node: '>=10.13.0'}
-    hasBin: true
+  seroval@1.0.7:
+    resolution: {integrity: sha512-n6ZMQX5q0Vn19Zq7CIKNIo7E75gPkGCFUEqDpa8jgwpYr/vScjqnQ6H09t1uIiZ0ZSK0ypEGvrYK2bhBGWsGdw==}
+    engines: {node: '>=10'}
 
-  revolt-api@0.5.7:
-    resolution: {integrity: sha512-4c+TssIwjbnMW3Myg0VGyDdQV3BcoxxlF7hQaa7FeZTXj6qHy31RphGWIPfo+aLKC0AQl0oI+hxeOX1fTVPPqw==}
-
-  revolt.js@6.0.20:
-    resolution: {integrity: sha512-iG0FmEmpHTWCQhlVd/jKXapCeoSyWCjPpmyjuQNGZYc1MqsgslK/dM2AbMRguANGRu8+z5/VljWgGNQh/+8zLA==}
-
-  tiny-glob@0.2.9:
-    resolution: {integrity: sha512-g/55ssRPUjShh+xkfx9UPDXqhckHEsHr4Vd9zX55oSdGZc/MD0m3sferOkwWtp98bv+kcVfEHtRJgBVJzelrzg==}
-
-  typescript@4.9.5:
-    resolution: {integrity: sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==}
-    engines: {node: '>=4.2.0'}
-    hasBin: true
+  solid-js@1.8.18:
+    resolution: {integrity: sha512-cpkxDPvO/AuKBugVv6xKFd1C9VC0XZMu4VtF56IlHoux8HgyW44uqNSWbozMnVcpIzHIhS3vVXPAVZYM26jpWw==}
 
   typescript@5.4.5:
     resolution: {integrity: sha512-vcI4UpRgg81oIRUFwR0WSIHKt11nJ7SAVlYNIu+QpqeyXP+gpQJy/Z4+F0aGxSE4MqwjyXvW/TzgkLAx2AGHwQ==}
@@ -127,10 +104,6 @@ packages:
   undici-types@5.26.5:
     resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
 
-  undici@5.28.4:
-    resolution: {integrity: sha512-72RFADWFqKmUb2hmmvNODKL3p9hcB6Gt2DOQMis1SEBaV6a4MH8soBvzg+95CYhCKPFedut2JY9bMfrDl9D23g==}
-    engines: {node: '>=14.0'}
-
   ws@8.17.0:
     resolution: {integrity: sha512-uJq6108EgZMAl20KagGkzCKfMEjxmKvZHG7Tlq0Z6nOky7YF7aq4mOx6xK8TJ/i1LeK4Qus7INktacctDgY8Ow==}
     engines: {node: '>=10.0.0'}
@@ -143,42 +116,30 @@ packages:
       utf-8-validate:
         optional: true
 
-  yargs-parser@21.1.1:
-    resolution: {integrity: sha512-tVpsJW7DdjecAiFpbIB1e3qxIQsE6NoPc5/eTdrbbIC4h0LVsWhnoa3g+m2HclBIujHzsxZ4VJVA+GUuc2/LBw==}
-    engines: {node: '>=12'}
-
 snapshots:
 
-  '@fastify/busboy@2.1.1':
-    optional: true
-
-  '@insertish/exponential-backoff@3.1.0-patch.2': {}
-
-  '@insertish/isomorphic-ws@4.0.1(ws@8.17.0)':
+  '@solid-primitives/map@0.4.11(solid-js@1.8.18)':
     dependencies:
-      ws: 8.17.0
+      '@solid-primitives/trigger': 1.0.11(solid-js@1.8.18)
+      solid-js: 1.8.18
 
-  '@insertish/oapi@0.1.18':
+  '@solid-primitives/set@0.4.11(solid-js@1.8.18)':
     dependencies:
-      typescript: 4.9.5
-    optionalDependencies:
-      axios: 0.26.1
-      openapi-typescript: 5.4.2
-    transitivePeerDependencies:
-      - debug
+      '@solid-primitives/trigger': 1.0.11(solid-js@1.8.18)
+      solid-js: 1.8.18
+
+  '@solid-primitives/trigger@1.0.11(solid-js@1.8.18)':
+    dependencies:
+      '@solid-primitives/utils': 6.2.3(solid-js@1.8.18)
+      solid-js: 1.8.18
+
+  '@solid-primitives/utils@6.2.3(solid-js@1.8.18)':
+    dependencies:
+      solid-js: 1.8.18
 
   '@types/node@20.14.10':
     dependencies:
       undici-types: 5.26.5
-
-  argparse@2.0.1:
-    optional: true
-
-  axios@0.21.4:
-    dependencies:
-      follow-redirects: 1.15.6
-    transitivePeerDependencies:
-      - debug
 
   axios@0.26.1:
     dependencies:
@@ -186,67 +147,36 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  eventemitter3@4.0.7: {}
+  csstype@3.1.3: {}
+
+  eventemitter3@5.0.1: {}
 
   follow-redirects@1.15.6: {}
 
-  globalyzer@0.1.0:
-    optional: true
-
-  globrex@0.1.2:
-    optional: true
-
-  js-yaml@4.1.0:
+  isomorphic-ws@5.0.0(ws@8.17.0):
     dependencies:
-      argparse: 2.0.1
-    optional: true
+      ws: 8.17.0
 
   lodash.defaultsdeep@4.6.1: {}
 
-  lodash.flatten@4.4.0: {}
-
-  lodash.isequal@4.5.0: {}
-
   long@5.2.3: {}
 
-  mime@3.0.0:
-    optional: true
-
-  mobx@6.12.3: {}
-
-  openapi-typescript@5.4.2:
+  revolt-api@0.7.11:
     dependencies:
-      js-yaml: 4.1.0
-      mime: 3.0.0
-      prettier: 2.8.8
-      tiny-glob: 0.2.9
-      undici: 5.28.4
-      yargs-parser: 21.1.1
-    optional: true
-
-  prettier@2.8.8:
-    optional: true
-
-  revolt-api@0.5.7:
-    dependencies:
-      '@insertish/oapi': 0.1.18
       axios: 0.26.1
       lodash.defaultsdeep: 4.6.1
     transitivePeerDependencies:
       - debug
 
-  revolt.js@6.0.20:
+  revolt.js@7.0.3:
     dependencies:
-      '@insertish/exponential-backoff': 3.1.0-patch.2
-      '@insertish/isomorphic-ws': 4.0.1(ws@8.17.0)
-      axios: 0.21.4
-      eventemitter3: 4.0.7
-      lodash.defaultsdeep: 4.6.1
-      lodash.flatten: 4.4.0
-      lodash.isequal: 4.5.0
+      '@solid-primitives/map': 0.4.11(solid-js@1.8.18)
+      '@solid-primitives/set': 0.4.11(solid-js@1.8.18)
+      eventemitter3: 5.0.1
+      isomorphic-ws: 5.0.0(ws@8.17.0)
       long: 5.2.3
-      mobx: 6.12.3
-      revolt-api: 0.5.7
+      revolt-api: 0.7.11
+      solid-js: 1.8.18
       ulid: 2.3.0
       ws: 8.17.0
     transitivePeerDependencies:
@@ -254,13 +184,17 @@ snapshots:
       - debug
       - utf-8-validate
 
-  tiny-glob@0.2.9:
+  seroval-plugins@1.0.7(seroval@1.0.7):
     dependencies:
-      globalyzer: 0.1.0
-      globrex: 0.1.2
-    optional: true
+      seroval: 1.0.7
 
-  typescript@4.9.5: {}
+  seroval@1.0.7: {}
+
+  solid-js@1.8.18:
+    dependencies:
+      csstype: 3.1.3
+      seroval: 1.0.7
+      seroval-plugins: 1.0.7(seroval@1.0.7)
 
   typescript@5.4.5: {}
 
@@ -268,12 +202,4 @@ snapshots:
 
   undici-types@5.26.5: {}
 
-  undici@5.28.4:
-    dependencies:
-      '@fastify/busboy': 2.1.1
-    optional: true
-
   ws@8.17.0: {}
-
-  yargs-parser@21.1.1:
-    optional: true
