@@ -4,7 +4,7 @@
   "main": "index.js",
   "type": "module",
   "dependencies": {
-    "revolt.js": "6.0.20"
+    "revolt.js": "7.0.3"
   },
   "devDependencies": {
     "@types/node": "^20.14.11",
